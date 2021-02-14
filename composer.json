@@ -1,6 +1,6 @@
 {
     "name": "sbkl/laravel-firebase-messaging",
-    "description": "Firebase Cloud Messaging integrated with Laravel based onn kreait/laravel-firebase",
+    "description": "Firebase Cloud Messaging integrated with Laravel based on kreait/laravel-firebase",
     "type": "library",
     "license": "MIT",
     "authors": [
