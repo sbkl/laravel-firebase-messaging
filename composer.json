@@ -1,0 +1,40 @@
+{
+    "name": "sbkl/laravel-firebase-messaging",
+    "description": "Firebase Cloud Messaging integrated with Laravel based onn kreait/laravel-firebase",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastien Koziel",
+            "email": "sebastien@sbkl.ltd"
+        }
+    ],
+    "require": {
+        "kreait/laravel-firebase": "^3.1"
+    },
+    "require-dev": {
+        "dms/phpunit-arraysubset-asserts": "^0.2.1",
+        "orchestra/testbench": "^6.12",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sbkl\\LaravelFirebaseMessaging\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sbkl\\LaravelFirebaseMessaging\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sbkl\\LaravelFirebaseMessaging\\FirebaseServiceProvider"
+            ],
+            "aliases": {
+                "Firebase": "Sbkl\\LaravelFirebaseMessaging\\Facades\\Firebase"
+            }
+        }
+    }
+}
